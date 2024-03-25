@@ -1,0 +1,4 @@
+<button [class]="checkLoading">
+    <span *ngIf="!loading">{{ name }}</span>
+    <span *ngIf="loading" class="donutSpinner"></span>
+</button>

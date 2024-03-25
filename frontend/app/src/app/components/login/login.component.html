@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="container">
+    <h1>Login</h1>
+    <app-error-msg [msg]="loginErrorMsg"></app-error-msg>
+    <div class="form">
+        <app-error-msg [msg]="validationMsg['account_id']"></app-error-msg>
+        <label htmlFor="account_input">↓アカウントID↓</label>
+        <input 
+            [(ngModel)]="account_id" 
+            type="text" name="account-id" 
+            id="account_input" 
+            placeholder="アカウントIDを入力してください" 
+            (ngModelChange)="onChangeCheck()"
+            (keydown.enter)="onSubmit($event)"
+            [class]="checkLoading"
+        />
+        <app-error-msg [msg]="validationMsg['password']"></app-error-msg>
+        <label htmlFor="password_input">↓パスワード↓</label>
+        <input 
+            [(ngModel)]="password" 
+            type="password" 
+            name="password" 
+            id="password_input" 
+            placeholder="パスワードを入力してください" 
+            (ngModelChange)="onChangeCheck()"
+            (keydown.enter)="onSubmit($event)"
+            [class]="checkLoading"
+        />
+        <app-button (click)="onSubmit($event)" name="ログイン" [loading]="onloading"></app-button>
+        <p>パスワードをお忘れの方は <a [class]="checkLoading" routerLink="main">こちら</a></p>
+    </div>
+</div>
