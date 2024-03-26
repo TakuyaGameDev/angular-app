@@ -6,7 +6,7 @@
         <div *ngIf="loginUser" class="user-info">
             {{ loginUser.name }}
         </div>
-        <div class="user-info-detail">
+        <div *ngIf="loginUser" class="user-info-detail">
             <div>
                 <span>ユーザ名：</span>{{ loginUser.name }}
             </div>
