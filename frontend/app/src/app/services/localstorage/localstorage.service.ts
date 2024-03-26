@@ -24,4 +24,8 @@ export class LocalstorageService {
   getLoginUser(): any {
     return localStorage.getItem(STORAGE_KEY_LOGIN_USER);
   }
+
+  removeLoginUser(): void {
+    localStorage.removeItem(STORAGE_KEY_LOGIN_USER);
+  }
 }

@@ -3,6 +3,17 @@
         <span>{{ title }}</span>
     </div>
     <div class="nav">
-        <app-button name="ログアウト"></app-button>
+        <div *ngIf="loginUser" class="user-info">
+            {{ loginUser.name }}
+        </div>
+        <div class="user-info-detail">
+            <div>
+                <span>ユーザ名：</span>{{ loginUser.name }}
+            </div>
+            <div>
+                <span>ユーザID：</span>{{ loginUser.email }}
+            </div>
+        </div>
+        <app-button *ngIf="loginUser" name="ログアウト" (click)="onClickLogout()"></app-button>
     </div>
 </div>

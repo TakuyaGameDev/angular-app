@@ -18,7 +18,9 @@ export class LoginComponent {
   constructor(
     private loginService: LoginService,
     private router: Router,
-    private localStorageService: LocalstorageService) {}
+    private localStorageService: LocalstorageService) {
+      this.localStorageService.removeLoginUser();
+    }
 
   resetMsg() {
     this.validationMsg['account_id'] = '';
