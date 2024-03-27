@@ -1,5 +1,17 @@
 .container {
-    margin: 5% auto;
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    margin: 3% auto;
+    .topnav {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+    }
+    .display-area {
+        background-color: white;
+        margin: 0 auto;
+        margin-top: 3%;
+        display: flex;
+        width: 50%;
+        border-radius: 0.5rem;
+    }
 }

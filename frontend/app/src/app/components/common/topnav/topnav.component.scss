@@ -1,0 +1,19 @@
+.container{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    button {
+        border: 2px solid steelblue;
+        background-color: lightsteelblue;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    button:hover {
+        background-color: tomato;
+        border: 2px solid crimson;
+        color: white;
+    }
+}

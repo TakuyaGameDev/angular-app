@@ -10,6 +10,8 @@ import { ButtonComponent } from './components/common/button/button.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ErrorMsgComponent } from './components/common/error-msg/error-msg.component';
+import { TopnavComponent } from './components/common/topnav/topnav.component';
+import { DisplayviewerComponent } from './components/displayviewer/displayviewer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ErrorMsgComponent } from './components/common/error-msg/error-msg.compo
     HeaderComponent,
     ButtonComponent,
     ErrorMsgComponent,
+    TopnavComponent,
+    DisplayviewerComponent,
   ],
   imports: [
     BrowserModule,
