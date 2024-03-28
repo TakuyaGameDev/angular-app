@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    text-align: center;
+    .list-table {
+        display: flex;
+        justify-content: center;
+        table {
+            border-collapse: collapse;
+            border: 2px solid lightsteelblue;
+            letter-spacing: 1px;
+            th, td {
+                border: 1px solid rgb(160 160 160);
+                padding: 10px 8px;
+            }
+            .data:hover {
+                background-color: white;
+            }
+            thead {
+                position: sticky;
+                top: 100px;
+                left: 0;
+                background-color: aliceblue;
+            }
+            tbody {
+                background-color: antiquewhite;
+            }
+        }
+    }
+}

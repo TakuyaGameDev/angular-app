@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { LoginRes } from '../types/user';
+import { CONNECTION_API_STRING } from '../consts';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
-  api:string = 'http://localhost:80';
+  api:string = CONNECTION_API_STRING;
   constructor(private http: HttpClient) { }
 
   getUsers(accountId:string,password:string) {

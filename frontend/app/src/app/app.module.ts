@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { ErrorMsgComponent } from './components/common/error-msg/error-msg.component';
 import { TopnavComponent } from './components/common/topnav/topnav.component';
 import { DisplayviewerComponent } from './components/displayviewer/displayviewer.component';
+import { ProductsListComponent } from './components/products-list/products-list.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { DisplayviewerComponent } from './components/displayviewer/displayviewer
     ErrorMsgComponent,
     TopnavComponent,
     DisplayviewerComponent,
+    ProductsListComponent,
   ],
   imports: [
     BrowserModule,

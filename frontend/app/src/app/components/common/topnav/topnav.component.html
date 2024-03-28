@@ -1,11 +1,11 @@
 <div class="container">
-    <button>
-        リスト1へ
+    <button [class]="isProducts" (click)="onClickSelect(0)">
+        商品リスト
     </button>
-    <button>
+    <button [class]="isTest" (click)="onClickSelect(1)">
         リスト2へ
     </button>
-    <button>
+    <button [class]="isTest2" (click)="onClickSelect(2)">
         リスト3へ
     </button>
 </div>

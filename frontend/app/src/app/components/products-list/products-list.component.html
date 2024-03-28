@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="list-table">
+        <table *ngIf="items.length != 0">
+            <caption>
+                <h3>商品リスト</h3>
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">商品コード</th>
+                    <th scope="col">商品名</th>
+                    <th scope="col">種類コード</th>
+                    <th scope="col">値段</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let product of items;">
+                <tr class="data">
+                    <th scope="row">{{ product['no'] }}</th>
+                    <th scope="row">{{ product['name'] }}</th>
+                    <td scope="row">{{ product['kind_id']}}</td>
+                    <td scope="row">{{ product['price'].toLocaleString() }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

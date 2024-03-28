@@ -11,6 +11,11 @@
         cursor: pointer;
         transition: 0.5s;
     }
+    button.active {
+        background-color: tomato;
+        border: 2px solid crimson;
+        color: white;
+    }
     button:hover {
         background-color: tomato;
         border: 2px solid crimson;

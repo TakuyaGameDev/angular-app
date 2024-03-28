@@ -5,12 +5,12 @@
         position: fixed;
         width: 100%;
         background-color: white;
+        z-index: 1;
     }
     .display-area {
         background-color: white;
         margin: 0 auto;
         margin-top: 3%;
-        display: flex;
         width: 50%;
         border-radius: 0.5rem;
     }

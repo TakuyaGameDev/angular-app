@@ -14,11 +14,6 @@ class productsSeeder extends Seeder
      */
     public function run()
     {
-        $menu = Product::create([
-            'kind_id' => 1,
-            'name' => 'テスト商品1',
-            'price' => 1000,
-            'no' => 99999999
-        ]);
+        Product::factory()->count(100)->create();
     }
 }

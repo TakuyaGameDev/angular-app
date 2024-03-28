@@ -1,9 +1,9 @@
 <app-header></app-header>
 <div class="container">
     <div class="topnav">
-        <app-topnav></app-topnav>
+        <app-topnav [selectKind]="selectKind" (onClickSelectKind)="onChangeSelectKind($event)"></app-topnav>
     </div>
     <div class="display-area">
-        <app-displayviewer></app-displayviewer>
+        <app-displayviewer [selectKind]="selectKind"></app-displayviewer>
     </div>
 </div>

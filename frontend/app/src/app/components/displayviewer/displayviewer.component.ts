@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-displayviewer',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./displayviewer.component.scss']
 })
 export class DisplayviewerComponent {
+  @Input() selectKind: number = 0;
 
+  
 }

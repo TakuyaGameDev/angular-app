@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { SELECT_NAV_KIND } from 'src/app/consts';
 import { LocalstorageService } from 'src/app/services/localstorage/localstorage.service';
 
 @Component({
@@ -9,6 +10,7 @@ import { LocalstorageService } from 'src/app/services/localstorage/localstorage.
 })
 export class MainComponent {
   loginUser: any = {};
+  selectKind: number = SELECT_NAV_KIND.PRODUCTS;
   constructor(private localStorageService: LocalstorageService,private router: Router){
     // localstorageから取得したデータをオブジェクトに直すため、JSON.parseをしている
     this.loginUser = JSON.parse(this.localStorageService.getLoginUser());
@@ -17,4 +19,8 @@ export class MainComponent {
       this.router.navigate(['/']);
     }
   };
+
+  onChangeSelectKind(kind: number) {
+    this.selectKind = kind;
+  }
 }

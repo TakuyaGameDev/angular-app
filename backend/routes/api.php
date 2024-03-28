@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/login',[UserController::class, 'login']);
+Route::get('/getProductList',[ProductController::class, 'getProductList']);
